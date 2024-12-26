@@ -107,13 +107,13 @@ while running:
         if event.type == KEYDOWN:
             
             if event.key == K_LEFT and player.rect.center[0] > left_lane:
-                player.rect.x -= 116
+                player.rect.x -= 120
             elif event.key == K_RIGHT and player.rect.center[0] < right_lane:
-                player.rect.x += 116
+                player.rect.x += 120
             elif event.key == K_UP and player.rect.center[0] > left_lane:
-                player.rect.x -= 90
+                player.rect.x -= 80
             elif event.key == K_DOWN and player.rect.center[0] < right_lane:
-                player.rect.x += 100
+                player.rect.x += 80
                 
             # check if there's a side swipe collision after changing lanes
             for vehicle in vehicle_group:
